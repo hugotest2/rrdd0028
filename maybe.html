@@ -90,7 +90,7 @@
       opacity: 0;
       pointer-events: none;
       z-index: 3;
-      transition: opacity 60s linear;
+      transition: opacity 15s linear;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -109,50 +109,22 @@
 </head>
 <body>
   <div id="overlay">
-    <div id="final-text">（唔，可我把矫情坏了）
+    <div id="final-text">
 万物守恒，从我的角度来说你并不喜欢我，
-所以我们分手吧。</div>
+所以我们分手吧，祝好。</div>
   </div>
   <div id="canvas"></div>
 
   <script>
-    const poem = `你的爱太远了，
-像枝头迟迟不肯开的花。
-我等了又等，
-等到春天都凉了半截。
+    const poem = `这个页面我改了又改。
+我仿佛拿着放大镜寻找着能说服自己周好美喜欢我的蛛丝马迹，
+我情绪稳定时在找，反思时在找，兴奋时在找，生气时也在找；
+你沉默的每一分钟里对我都是某种心理上的凌迟，很难受；
+秋秋说耐心一些，再等等看。
 
-我原以为爱是靠近，
-后来才知道，
-它也可以是一种安静自耗的等待。
-
-我们不是此消彼长，
-只是供需不对等。
-我给得太多，
-你却始终没有准备好要。
-
-我不怪你，
-只是久了，
-心真的倦了。
-
-我来时是真心的。
-可一段关系，靠一个人走不成。
-
-你给得太少，太迟，太模糊。
-我够不到，也不想再够了。
-
-也许你从来没有拒绝我，
-但你也从未真正向我走来。
-
-我站在原地太久了。
-风吹了好几季，
-我才明白——你不会来了。
-
-……
-
-现在我也爱你，可是——
-倦了，倦了；
-倦了，倦了；
-我们分开吧。`;
+我心理上终究是再也等不下去了，
+你的喜欢对我来说可能太难了，
+所以，我们分开吧。`;
 
     const container = document.getElementById("canvas");
     const lines = poem.split('\n');
