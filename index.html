@@ -171,7 +171,7 @@
       no: document.getElementById("no")
     };
     const chosen = localStorage.getItem("userChoice");
-    const openDate = new Date("2025-06-28T00:00:00"); // ISO格式，避免Safari解析失败
+    const openDate = new Date("2025-07-03T00:00:00"); // ISO格式，避免Safari解析失败
     const now = new Date();
 
     if (now >= openDate) {
@@ -204,7 +204,7 @@
       }
     } else {
       const lockNotice = document.createElement("p");
-      lockNotice.innerHTML = "<strong style='color:#cc5555;'>当前不可选择，将于 <u>6月28日</u> 开放（qrz我就是很喜欢28这个数字嘛）。</strong>";
+      lockNotice.innerHTML = "<strong style='color:#cc5555;'>当前不可选择，将于 <u>07月03日</u> 开放。</strong>";
       document.querySelector(".button-container").insertAdjacentElement("beforebegin", lockNotice);
     }
   </script>
