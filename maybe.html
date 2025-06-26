@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Maybe</title>
   <style>
     html, body {
       margin: 0;
@@ -90,7 +90,7 @@
       opacity: 0;
       pointer-events: none;
       z-index: 3;
-      transition: opacity 15s linear;
+      transition: opacity 50s linear;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -110,14 +110,39 @@
 <body>
   <div id="overlay">
     <div id="final-text">
-万物守恒，从我的角度来说你并不喜欢我，
-所以我们分手吧，祝好。</div>
+万物守恒，如果你还在计较得失的话，
+那么我向你提出分手，好吗。</div>
   </div>
   <div id="canvas"></div>
 
   <script>
-    const poem = `这个页面我改了又改。
-`;
+    const poem = `我读懂了你的犹豫。
+我理解你可能是真的在认真思考，也明白你不是故意不说。
+
+但对我来说，这种被悬着的状态，很消耗，也很疼。
+你说“还没想好”的时候，我脑海就开始构造各种可能的结局。
+我在不停拆解你没说出口的意思，也在试图调整自己的反应和期待。
+我不是没耐心，我是真的会累。
+
+我当然愿意等你——只要你也在努力。
+但如果只是我在撑、我在猜、我在反复调节自己，
+那这种等待，对我来说就不是期待，而是凌迟。
+
+我不怕你不确定。
+但我希望你能说出来，不要让我去猜。
+
+如果你真的在衡量，那就说说你在衡量什么；
+你有顾虑就告诉我；你有期待就明讲；你觉得我不够好，也可以说。
+你甚至可以告诉我要换取你的喜欢，我需要付出的代价这些的，我可以试试看。
+
+我不怕面对问题，也不怕听到真话。
+我怕的是，你什么都不说，让我一个人兜住全部不确定。
+我讨厌这种模糊、猜测和被动。
+讨厌你算好了我会做什么，然后等着我去说、我去做、我去扛。
+
+这段关系不该只有一个人在推进。
+不平等终会坍塌。走不远的。
+如果是这样的话，我愿意主动提出分手`;
 
     const container = document.getElementById("canvas");
     const lines = poem.split('\n');
