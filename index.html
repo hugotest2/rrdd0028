@@ -60,8 +60,6 @@
       color: #ddd;
       box-shadow: 0 4px 10px rgba(255,255,255,0.05);
       transition: all 0.3s ease;
-
-      /* ！！！！默认禁用状态样式 */
       opacity: 0.5;
       pointer-events: none;
       cursor: not-allowed;
@@ -123,10 +121,16 @@
 </head>
 <body onmousemove="handleMouseMove(event)">
   <div id="lantern-container" style="position: fixed; inset: 0; z-index: -1;">
-    <img src="lanterns/deng1.png" class="lantern" style="left: 10%; width: 40px; animation-duration: 25s; animation-delay: 2s;">
-    <img src="lanterns/deng2.png" class="lantern" style="left: 30%; width: 45px; animation-duration: 30s; animation-delay: 1s;">
-    <img src="lanterns/deng3.png" class="lantern" style="left: 50%; width: 50px; animation-duration: 28s; animation-delay: 3s;">
-    <img src="lanterns/deng4.png" class="lantern" style="left: 70%; width: 42px; animation-duration: 32s; animation-delay: 4s;">
+    <img src="lanterns/deng1.png" class="lantern" style="left: 5%; width: 40px; animation-duration: 26s; animation-delay: 1s;">
+    <img src="lanterns/deng2.png" class="lantern" style="left: 15%; width: 45px; animation-duration: 30s; animation-delay: 3s;">
+    <img src="lanterns/deng3.png" class="lantern" style="left: 25%; width: 48px; animation-duration: 28s; animation-delay: 2.2s;">
+    <img src="lanterns/deng4.png" class="lantern" style="left: 35%; width: 42px; animation-duration: 31s; animation-delay: 1.5s;">
+    <img src="lanterns/deng5.png" class="lantern" style="left: 45%; width: 44px; animation-duration: 29s; animation-delay: 2.8s;">
+    <img src="lanterns/deng6.png" class="lantern" style="left: 55%; width: 38px; animation-duration: 27s; animation-delay: 3.5s;">
+    <img src="lanterns/deng2.png" class="lantern" style="left: 65%; width: 41px; animation-duration: 30s; animation-delay: 4s;">
+    <img src="lanterns/deng3.png" class="lantern" style="left: 75%; width: 46px; animation-duration: 32s; animation-delay: 2.1s;">
+    <img src="lanterns/deng5.png" class="lantern" style="left: 85%; width: 40px; animation-duration: 26s; animation-delay: 1.7s;">
+    <img src="lanterns/deng6.png" class="lantern" style="left: 95%; width: 43px; animation-duration: 33s; animation-delay: 3.3s;">
   </div>
 
   <main>
@@ -171,7 +175,7 @@
       no: document.getElementById("no")
     };
     const chosen = localStorage.getItem("userChoice");
-    const openDate = new Date("2025-07-03T00:00:00"); // ISO格式，避免Safari解析失败
+    const openDate = new Date("2025-07-03T00:00:00");
     const now = new Date();
 
     if (now >= openDate) {
@@ -198,7 +202,7 @@
           } else if (chosen === target) {
             window.location.href = target;
           } else {
-            window.location.href = "gone"; // 触发 GitHub Pages 的自定义404
+            window.location.href = "gone"; // 自定义 404
           }
         };
       }
