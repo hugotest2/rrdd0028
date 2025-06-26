@@ -176,7 +176,7 @@
       no: document.getElementById("no")
     };
     const chosen = localStorage.getItem("userChoice");
-    const openDate = new Date("2025-06-28T00:00:00");
+    const openDate = new Date("2025-06-26T00:00:00");
     const now = new Date();
 
     if (now < openDate) {
@@ -209,7 +209,7 @@
           } else if (chosen === target) {
             window.location.href = target;
           } else {
-            window.location.href = "/404.html";
+            window.location.href = "gone";
           }
         };
       }
